@@ -32,7 +32,7 @@ body{
     background-color: var(--light-mode-background);
 }
 
-h1, h2, h3{
+h1, h2, h3, a{
     font-family: "Hanken Grotesk";
     color: var(--light-mode-accent);
     font-weight: 600;
@@ -63,6 +63,11 @@ ul.no-bullets {
     list-style-type: none; 
     padding: 0; 
     margin: 0;
+  }
+
+  li.heading {
+    color: var(--light-mode-accent);
+    font-weight:600;
   }
 
   #left {
@@ -101,6 +106,13 @@ ul.no-bullets {
     margin-bottom: 100px;
     margin-right: 50px;
     margin-left: 50px;
+    border-radius: 25px;
+    border: 2px solid #212121;
+    padding: 20px;
+  }
+
+  #center{
+    text-align: center;
   }
 
   #title{
