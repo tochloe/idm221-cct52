@@ -1,15 +1,13 @@
-
 @font-face {
     font-family: "Hanken Grotesk";
-    src: url(./fonts/HankenGrotesk-VariableFont_wght.ttf);
+    src: url(../fonts/HankenGrotesk.ttf);
     font-weight: 100 900;
 }
 @font-face {
     font-family: "Inter";
-    src: url(./fonts/Inter-VariableFont_opsz\,wght.ttf);
+    src: url(../fonts/Inter.ttf);
     font-weight: 100 900;
 }
-
 
 html {
     --light-mode-background: #F7F7F7;
@@ -24,8 +22,8 @@ html {
     --dark-mode-accent: #E4D7F3;
     --dark-mode-button: #45403B;
 
-    --heading-font: "Hanken Grotesk", Times New Roman, Times, serif;
-    --text-font: "Inter", Times New Roman, Times, serif;
+    --heading-font: "Hanken Grotesk", serif;
+    --text-font: "Inter", serif;
 }
 
 body{
@@ -33,12 +31,12 @@ body{
 }
 
 h1, h2, h3, a{
-    font-family: "Hanken Grotesk";
+    font-family: var(--heading-font);
     color: var(--light-mode-accent);
     font-weight: 600;
 }
 p, li{
-    font-family: "Inter";
+    font-family: var(--text-font);
 }
 
 p{
@@ -92,13 +90,17 @@ ul.no-bullets {
   #speech{
     text-align: right;
     margin-left: 0;
-    margin-top:0;
+    margin-top: 0;
     padding-top: 0;
     float: right;
   }
 
   #nav{
     float: top;
+    position: sticky;
+    top: 0px;
+    background-color: var(--light-mode-block-background);
+    overflow: hidden;
   }
 
   #intro{
