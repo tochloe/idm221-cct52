@@ -16,12 +16,6 @@ html {
     --light-mode-accent: #334189;
     --light-mode-caption: #212121;
 
-    --dark-mode-background: #212121;
-    --dark-mode-text-content: #F7F7F7;
-    --dark-mode-block-background: #334189;
-    --dark-mode-accent: #E4D7F3;
-    --dark-mode-button: #45403B;
-
     --heading-font: "Hanken Grotesk", serif;
     --text-font: "Inter", serif;
 }
@@ -60,6 +54,7 @@ div.caption-light {
     background-color:#E4D7F3 ;
 }
 
+/* links section */
 a:hover{
     background-color: var(--light-mode-block-background);
     opacity: 0.3;
@@ -80,6 +75,8 @@ li.heading {
     font-weight:600;
 }
 
+
+/* left shortcut */
 #left {
     text-align: left;
     margin: 0;
@@ -87,11 +84,13 @@ li.heading {
     float: left;
  }
 
+ /* right shortcut */
 #right {
     text-align: right;
     float: right;
 }
 
+/* center shortcut */
 #center{
     text-align:center;
 }
@@ -102,13 +101,12 @@ div.gif{
 nav{
     background-color: var(--light-mode-block-background);
     justify-content: space-between;
-    padding: 14px;
+    padding: 34px;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 0px;
     margin-right: 0px;
     position: sticky;
-    
 }
 
 
@@ -140,12 +138,27 @@ div.center {
     margin-right: 20px;
 }
 
-div.grad1 {
-    background-color: #212121;
-    background: linear-gradient (#212121, #F7F7F7);
-    height: 120px;
+/* gradients */
+
+/* white to black > bg to intro div */
+div.grad1 {  
+    background: linear-gradient(var(--light-mode-background), var(--light-mode-caption));
+    height: 50px;
 }
 
+/* lavendar to white > nav to bg */
+div.grad2 {
+    background: linear-gradient(var(--light-mode-block-background), var(--light-mode-background));
+    height: 50px;
+}
+
+/* black to white > intro to content  */
+div.grad3{
+    background: linear-gradient(var(--light-mode-caption), var(--light-mode-background));
+    height: 50px;
+}
+
+/* NAV SECTION */
 
 a.chloe{
     font: var(--heading-font);
@@ -155,6 +168,7 @@ a.chloe{
     margin: 4px;
     text-align: left;
     margin-top: 40px;
+    text-decoration: none;
 }
 
 a.nav {
@@ -163,7 +177,6 @@ a.nav {
     font-weight:600;
     color: var(--light-mode-background);
     margin-bottom: 60px;
-    
 }
 
 a.nav:hover{
@@ -201,4 +214,9 @@ nav label {
     padding: 0.5px;
     line-height: 4px;
     align-self: center;
+}
+
+#aboutme {
+    max-width: 100%;
+    height: auto;
 }
