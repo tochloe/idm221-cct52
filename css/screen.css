@@ -74,6 +74,7 @@ ul.no-bullets {
 li.heading {
     color: var(--light-mode-accent);
     font-weight:600;
+    padding-top: 60;
 }
 
 
